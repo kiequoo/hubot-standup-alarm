@@ -199,12 +199,11 @@ module.exports = (robot) ->
   'use strict'
   # Constants.
   STANDUP_MESSAGES = [
-    'Standup time!'
-    'Time for standup, y\'all.'
-    'It\'s standup time once again!'
-    'Get up, stand up (it\'s time for our standup)'
-    'Standup time. Get up, humans'
-    'Standup time! Now! Go go go!'
+    'This mission is too important for me to allow you to jeopardize it.  So go do your standup!',
+    'Standup time. Get up, you lazy feckers!',
+    'Stop wasting time in #sloth_chat and go do your standup!',
+    'Hey prutsers, stop lazing around and go do your standup!',
+    'Levantense, perezosos!  Standup time.'
   ]
   PREPEND_MESSAGE = process.env.HUBOT_STANDUP_PREPEND or ''
   if PREPEND_MESSAGE.length > 0 and PREPEND_MESSAGE.slice(-1) != ' '
